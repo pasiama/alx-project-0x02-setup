@@ -1,10 +1,23 @@
-export default function About() {
-      return (
-       <div>
-            <h1>About</h1>
-            <p>This is a simple React app with navigation bar and a simple about page.</p>
-            <p>To navigate to other pages, click on the links in the navigation bar.</p>
-            <p>Please note that this is a basic app and does not include any real-world features.</p>
-       </div>
-      );
-    }
+import React from "react";
+import Button from "@/components/common/Button";
+
+const About: React.FC = () => {
+  return (
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">About Page</h1>
+      <div className="flex space-x-4">
+        <Button size="small" shape="rounded-sm">
+          Small Button
+        </Button>
+        <Button size="medium" shape="rounded-md">
+          Medium Button
+        </Button>
+        <Button size="large" shape="rounded-full">
+          Large Button
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default About;
