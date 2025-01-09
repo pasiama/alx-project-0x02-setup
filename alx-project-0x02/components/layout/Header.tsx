@@ -1,9 +1,33 @@
+import React from "react";
 import Link from "next/link";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
-    <div>
-      <Link href="/home">Home</Link> | <Link href="/about">About</Link>
-    </div>
+    <header className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-xl font-bold">My App</h1>
+        <nav>
+          <ul className="flex space-x-4">
+            <li>
+              <Link href="/home">
+                <a className="hover:text-blue-400">Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <a className="hover:text-blue-400">About</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/posts">
+                <a className="hover:text-blue-400">Posts</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
-}
+};
+
+export default Header;
