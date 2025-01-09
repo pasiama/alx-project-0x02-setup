@@ -1,12 +1,23 @@
-import Link from "next/link";
+import React from "react";
+import Card from "@/components/common/Card";
 
-export default function Home() {
-       return (
-        <div>
-              <h1>Welcome to my React App!</h1>
-              <p>This is a simple React application.</p>
-              <Link href="/about">About</Link> | <Link href="/contact">Contact</Link>
-              {/* Add other routes here */}
-        </div>
-       );
-    }
+const Home: React.FC = () => {
+  return (
+    <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <Card
+        title="Luxury Villa"
+        content="Experience the best of luxury in our beautiful villas with top-notch amenities."
+      />
+      <Card
+        title="Mountain Retreat"
+        content="Escape to the mountains and enjoy a serene environment like never before."
+      />
+      <Card
+        title="Beachfront Bliss"
+        content="Relax by the beach with our exclusive beachfront properties."
+      />
+    </div>
+  );
+};
+
+export default Home;
