@@ -10,3 +10,10 @@ export interface ButtonProps {
       children: React.ReactNode;
     }
     
+    // interfaces/index.ts
+export interface PostProps {
+      userId: number;
+      title: string;
+      content: string;
+    }
+    
