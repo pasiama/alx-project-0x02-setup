@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Featured Posts Section */}
       <section className="py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Featured Posts</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-black">Featured Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Replace placeholders with dynamic content */}
           {Array(3)
@@ -40,7 +40,7 @@ export default function Home() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-xl font-semibold mb-2 text-black">
                     Post Title {index + 1}
                   </h3>
                   <p className="text-gray-600 mb-4">
@@ -58,7 +58,7 @@ export default function Home() {
 
       {/* Categories Section */}
       <section className="bg-gray-100 py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Explore Categories</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-black">Explore Categories</h2>
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {/* Replace placeholders with dynamic categories */}
           {["Tech", "Lifestyle", "Travel", "Food", "Health"].map((category) => (
