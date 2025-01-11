@@ -23,10 +23,10 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
-        <h2 className="text-xl font-bold mb-4">Add New Post</h2>
+        <h2 className="text-xl font-bold mb-4 text-black">Add New Post</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Title</label>
+            <label className="block text-gray-700 mb-2 ">Title</label>
             <input
               type="text"
               value={title}
